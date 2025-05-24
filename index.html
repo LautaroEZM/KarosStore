@@ -71,7 +71,6 @@
         <section id="productos">
             <h2>Productos</h2>
             <div class="productos-container" id="productos-container">
-                <!-- Productos se cargan acá -->
             </div>
         </section>
 
@@ -112,7 +111,7 @@
             try {
                 const res = await fetch('https://fakestoreapi.com/products?limit=12');
                 const productos = await res.json();
-
+ 
                 productos.forEach(prod => {
                     const card = document.createElement('div');
                     card.className = 'card';
@@ -133,7 +132,6 @@
 
         cargarProductos();
 
-        // MENU MOVIL
         const menuToggle = document.getElementById('menu-toggle');
         const navMobile = document.getElementById('nav-mobile');
         const overlay = document.getElementById('overlay');

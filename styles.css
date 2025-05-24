@@ -252,6 +252,23 @@ footer {
     color: #666;
 }
 
+/* ========== Botón Menú Toggle (Mobile) ========== */
+#menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus {
+    color: #fff;
+    outline: none;
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 740px) {
     body {
@@ -276,22 +293,6 @@ footer {
 }
 
 /* ========== Menú Móvil ========== */
-#menu-toggle {
-    display: none;
-    font-size: 2rem;
-    background: transparent;
-    border: none;
-    color: #bbb;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#menu-toggle:hover,
-#menu-toggle:focus {
-    color: #fff;
-    outline: none;
-}
-
 .nav-mobile {
     position: fixed;
     top: 0;
