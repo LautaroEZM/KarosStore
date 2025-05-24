@@ -37,3 +37,9 @@ Este proyecto es una página web con diseño moderno y oscuro, donde se muestra 
 - **Responsividad garantizada** para cualquier tamaño de pantalla.
 
 ---
+
+## Despliegue / Hosting
+
+El sitio está alojado gratuitamente usando **GitHub Pages** y se puede visitar en la siguiente URL:
+
+[https://lautaroezm.github.io/KarosStore/](https://lautaroezm.github.io/KarosStore/)
