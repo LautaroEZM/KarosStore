@@ -1,0 +1,21 @@
+@media (max-width: 740px) {
+  body {
+    padding: 15px 20px 40px 20px;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  .nav-desktop {
+    display: none !important;
+  }
+
+  #menu-toggle {
+    display: block !important;
+  }
+
+  #carrito-lateral {
+    width: 100%;
+  }
+}

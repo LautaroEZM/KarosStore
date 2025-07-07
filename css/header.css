@@ -1,0 +1,155 @@
+.logo-texto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* Menú móvil */
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: #222;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.9);
+  padding-top: 70px;
+  transition: left 0.3s ease;
+  z-index: 1100;
+}
+
+.nav-mobile.active {
+  left: 0;
+}
+header {
+  background-color: #181818;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  z-index: 1100;
+  position: sticky;
+  top: 0;
+}
+
+/* Menú móvil */
+#menu-toggle {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus {
+  color: #fff;
+  outline: none;
+}
+
+.nav-desktop ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-desktop ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav-desktop ul li a:hover,
+.nav-desktop ul li a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Nav móvil */
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background-color: #222;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.9);
+  padding-top: 70px;
+  transition: left 0.3s ease;
+  z-index: 1200;
+}
+
+.nav-mobile.active {
+  left: 0;
+}
+
+.nav-mobile ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-mobile li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.nav-mobile a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: block;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-mobile a:hover,
+.nav-mobile a:focus {
+  background-color: #444;
+  color: #fff;
+  outline: none;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1150;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1050;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

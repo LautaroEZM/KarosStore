@@ -2,171 +2,155 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Karos Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Karos Store - Ropa Online</title>
+  <meta name="description"
+    content="Karos Store: Tienda online de ropa moderna y accesible. Compra fácil y rápido con carrito dinámico." />
+  <meta name="keywords" content="ropa, tienda online, moda, Karos Store, carrito de compras" />
+  <meta name="author" content="Lautaro" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS modular -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/productos.css" />
+  <link rel="stylesheet" href="css/reseñas.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="css/carrito.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
+  <header class="d-flex align-items-center justify-content-between px-4 py-3 bg-dark sticky-top" role="banner">
+    <div class="d-flex align-items-center gap-2 logo-texto">
+      <img src="img/karosStore.jpg" alt="Logo Karos Store" class="logo rounded-circle" />
+      <h1 class="text-light m-0">Karos Store</h1>
+    </div>
 
-    <header>
-        <div class="logo-texto">
-            <img src="karosStore.jpg" alt="Logo Karos Store" class="logo" />
-            <h1>Karos Store</h1>
+    <button id="menu-toggle" class="btn btn-dark d-md-none" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="nav-mobile">☰</button>
+
+    <nav class="nav-desktop d-none d-md-block" role="navigation" aria-label="Menú principal">
+      <ul class="nav gap-3 m-0">
+        <li class="nav-item"><a href="#inicio" class="nav-link text-light">Inicio</a></li>
+        <li class="nav-item"><a href="#productos" class="nav-link text-light">Productos</a></li>
+        <li class="nav-item"><a href="#reseñas" class="nav-link text-light">Reseñas</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link text-light">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <nav id="nav-mobile" class="nav-mobile" aria-hidden="true" role="navigation" aria-label="Menú móvil">
+      <ul class="list-unstyled text-center mt-4">
+        <li><a href="#inicio" class="nav-mobile-link d-block py-2 text-light text-decoration-none">Inicio</a></li>
+        <li><a href="#productos" class="nav-mobile-link d-block py-2 text-light text-decoration-none">Productos</a></li>
+        <li><a href="#reseñas" class="nav-mobile-link d-block py-2 text-light text-decoration-none">Reseñas</a></li>
+        <li><a href="#contacto" class="nav-mobile-link d-block py-2 text-light text-decoration-none">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div id="overlay"></div>
+  </header>
+
+  <main class="container my-5" role="main">
+    <section id="inicio" class="mb-5 text-light" tabindex="0">
+      <h2 class="text-center mb-4">KAROS STORE</h2>
+      <div id="descripcion" class="fs-6 lh-lg text-justify">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus dui, pulvinar eget eros at,
+          varius imperdiet mauris. Donec sagittis lacus diam, eget gravida quam vulputate a. Fusce bibendum
+          ultricies vestibulum. Cras non imperdiet nunc. Nunc in est et eros dictum commodo. Sed tempor, massa
+          nec consectetur condimentum, sapien mi luctus nisi, sit amet varius dolor odio vitae metus. Aenean
+          dignissim varius diam, a facilisis justo malesuada.</p>
+
+        <p>Donec ullamcorper pretium sapien. Donec risus quam, mollis id congue eu, congue at ante. Integer
+          faucibus massa ac ipsum laoreet feugiat. Donec fermentum erat ac est varius eleifend. Proin aliquet
+          magna vitae massa porttitor, non tristique enim tempor. Ut vitae enim velit. Nullam commodo, tellus
+          at scelerisque consequat, magna mi tincidunt nisi, non finibus metus ante at sapien. Pellentesque
+          congue, leo et mollis varius, turpis nibh volutpat nulla, eu iaculis neque ligula eget magna.
+          Praesent et ipsum felis. Donec dapibus lorem vel quam maximus aliquam. Proin maximus egestas magna.
+          Donec facilisis dolor dui, id facilisis tortor tristique eu. Aliquam dignissim est sit amet justo
+          faucibus, a feugiat lectus ultrices.</p>
+
+        <p>Mauris vel odio id ligula bibendum tempor. Integer id tempus sem. Quisque rhoncus libero ac mauris
+          fermentum, eu scelerisque velit tincidunt. Cras elit leo, aliquam ut augue a, imperdiet egestas
+          diam. Duis in fermentum nibh, vitae sagittis nulla. Proin ut odio ultricies, bibendum mi eget,
+          scelerisque mauris. Aenean a quam felis.</p>
+      </div>
+    </section>
+
+    <section id="productos" class="mb-5" tabindex="0" aria-label="Lista de productos">
+      <h2 class="text-center text-light mb-4">Productos</h2>
+      <div id="productos-container">
+      </div>
+    </section>
+
+    <section id="reseñas" class="mb-5" tabindex="0" aria-label="Reseñas de clientes">
+      <h2 class="text-center text-light mb-4">Reseñas</h2>
+      <div class="reseñas-grid">
+        <article class="reseña text-light p-3 mb-3 rounded bg-secondary shadow" tabindex="0">"Excelente servicio." -
+          Cliente A</article>
+        <article class="reseña text-light p-3 mb-3 rounded bg-secondary shadow" tabindex="0">"Muy buen producto." -
+          Cliente B</article>
+        <article class="reseña text-light p-3 mb-3 rounded bg-secondary shadow" tabindex="0">"Lo recomiendo." - Cliente
+          C</article>
+        <article class="reseña text-light p-3 mb-3 rounded bg-secondary shadow" tabindex="0">"La mejor calidad." -
+          Cliente D</article>
+      </div>
+    </section>
+
+    <section id="contacto" class="mb-5" tabindex="0" aria-label="Formulario de contacto">
+      <h2 class="text-center text-light mb-4">Contacto</h2>
+      <form action="https://formspree.io/f/myzwaqwj" method="POST" class="mx-auto" style="max-width: 600px;" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label text-light">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required aria-required="true" class="form-control" />
+          <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
         </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-light">Correo electrónico:</label>
+          <input type="email" id="email" name="_replyto" required aria-required="true" class="form-control" />
+          <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label text-light">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true" class="form-control"></textarea>
+          <div class="invalid-feedback">Por favor, ingresa un mensaje.</div>
+        </div>
+        <button type="submit" class="btn btn-outline-light w-100">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-        <button id="menu-toggle" aria-label="Abrir menú">
-            ☰
-        </button>
+  <button id="boton-carrito" aria-label="Abrir carrito de compras" title="Abrir carrito" aria-haspopup="true"
+    aria-expanded="false">
+    🛒 <span id="contador-carrito" aria-live="polite" aria-atomic="true" class="badge bg-danger rounded-circle">0</span>
+  </button>
 
-        <nav class="nav-desktop">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#reseñas">Reseñas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <nav id="nav-mobile" class="nav-mobile" aria-hidden="true">
-            <ul>
-                <li><a href="#inicio" class="nav-mobile-link">Inicio</a></li>
-                <li><a href="#productos" class="nav-mobile-link">Productos</a></li>
-                <li><a href="#reseñas" class="nav-mobile-link">Reseñas</a></li>
-                <li><a href="#contacto" class="nav-mobile-link">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div id="overlay"></div>
+  <aside id="carrito-lateral" aria-label="Carrito de compras" aria-hidden="true" role="region" tabindex="-1">
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+      <h3 class="m-0">Tu Carrito</h3>
+      <button id="cerrar-carrito" aria-label="Cerrar carrito" class="btn btn-light btn-sm">&times;</button>
     </header>
-
-    <main>
-        <section id="inicio">
-            <h2>KAROS STORE</h2>
-            <div id="descripcion">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum purus dui, pulvinar eget eros at,
-                    varius imperdiet mauris. Donec sagittis lacus diam, eget gravida quam vulputate a. Fusce bibendum
-                    ultricies vestibulum. Cras non imperdiet nunc. Nunc in est et eros dictum commodo. Sed tempor, massa
-                    nec consectetur condimentum, sapien mi luctus nisi, sit amet varius dolor odio vitae metus. Aenean
-                    dignissim varius diam, a facilisis justo malesuada <br><br></p>
-
-                <p>Donec ullamcorper pretium sapien. Donec risus quam, mollis id congue eu, congue at ante. Integer
-                    faucibus massa ac ipsum laoreet feugiat. Donec fermentum erat ac est varius eleifend. Proin aliquet
-                    magna vitae massa porttitor, non tristique enim tempor. Ut vitae enim velit. Nullam commodo, tellus
-                    at scelerisque consequat, magna mi tincidunt nisi, non finibus metus ante at sapien. Pellentesque
-                    congue, leo et mollis varius, turpis nibh volutpat nulla, eu iaculis neque ligula eget magna.
-                    Praesent et ipsum felis. Donec dapibus lorem vel quam maximus aliquam. Proin maximus egestas magna.
-                    Donec facilisis dolor dui, id facilisis tortor tristique eu. Aliquam dignissim est sit amet justo
-                    faucibus, a feugiat lectus ultrices.<br><br></p>
-
-                <p>Mauris vel odio id ligula bibendum tempor. Integer id tempus sem. Quisque rhoncus libero ac mauris
-                    fermentum, eu scelerisque velit tincidunt. Cras elit leo, aliquam ut augue a, imperdiet egestas
-                    diam. Duis in fermentum nibh, vitae sagittis nulla. Proin ut odio ultricies, bibendum mi eget,
-                    scelerisque mauris. Aenean a quam felis.</p>
-            </div>
-        </section>
-
-        <section id="productos">
-            <h2>Productos</h2>
-            <div class="productos-container" id="productos-container">
-            </div>
-        </section>
-
-        <section id="reseñas">
-            <h2>Reseñas</h2>
-            <div class="reseñas-grid">
-                <div class="reseña">"Excelente servicio." - Cliente A</div>
-                <div class="reseña">"Muy buen producto." - Cliente B</div>
-                <div class="reseña">"Lo recomiendo." - Cliente C</div>
-                <div class="reseña">"La mejor calidad." - Cliente D</div>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/myzwaqwj" method="POST">
-                <label for="nombre">Nombre:</label><br />
-                <input type="text" id="nombre" name="nombre" required /><br />
-
-                <label for="email">Correo electrónico:</label><br />
-                <input type="email" id="email" name="_replyto" required /><br />
-
-                <label for="mensaje">Mensaje:</label><br />
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br />
-
-                <button class="enviar" type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Lautaro. Todos los derechos reservados.</p>
+    <div id="carrito-contenido" class="p-3 overflow-auto">
+      <!-- Productos agregados -->
+    </div>
+    <footer class="p-3 border-top">
+      <div class="d-flex justify-content-between align-items-center">
+        <strong>Total:</strong>
+        <span id="total-carrito" class="fs-5">$0.00</span>
+      </div>
+      <button id="vaciar-carrito" class="btn btn-danger w-100 mt-3">Vaciar Carrito</button>
+      <button id="comprar-carrito" class="btn btn-success w-100 mt-2">Simular Compra</button>
     </footer>
+  </aside>
 
-    <script>
-        async function cargarProductos() {
-            const container = document.getElementById('productos-container');
-            try {
-                const res = await fetch('https://fakestoreapi.com/products?limit=12');
-                const productos = await res.json();
- 
-                productos.forEach(prod => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <h3>${prod.title}</h3>
-                        <div class="img-wrapper">
-                            <img src="${prod.image}" alt="${prod.title}" />
-                        </div>
-                        <p class="price">$${prod.price}</p>
-                    `;
-                    container.appendChild(card);
-                });
-            } catch (error) {
-                container.innerHTML = '<p>Error cargando productos. Probá recargar la página.</p>';
-                console.error('Error fetching products:', error);
-            }
-        }
+  <div id="overlay-carrito"></div>
 
-        cargarProductos();
-
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMobile = document.getElementById('nav-mobile');
-        const overlay = document.getElementById('overlay');
-        const navLinks = document.querySelectorAll('.nav-mobile-link');
-
-        function abrirMenu() {
-            navMobile.classList.add('active');
-            overlay.classList.add('active');
-            navMobile.setAttribute('aria-hidden', 'false');
-            menuToggle.setAttribute('aria-label', 'Cerrar menú');
-        }
-
-        function cerrarMenu() {
-            navMobile.classList.remove('active');
-            overlay.classList.remove('active');
-            navMobile.setAttribute('aria-hidden', 'true');
-            menuToggle.setAttribute('aria-label', 'Abrir menú');
-        }
-
-        menuToggle.addEventListener('click', () => {
-            if (navMobile.classList.contains('active')) {
-                cerrarMenu();
-            } else {
-                abrirMenu();
-            }
-        });
-
-        overlay.addEventListener('click', cerrarMenu);
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                cerrarMenu();
-            });
-        });
-    </script>
+  <script src="js/menu.js" type="module"></script>
+  <script src="js/productos.js" type="module"></script>
+  <script src="js/carrito.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
