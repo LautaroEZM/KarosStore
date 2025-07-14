@@ -1,45 +1,86 @@
-# Proyecto Web de Productos Responsive
+# 🛒 Karos Store - Proyecto Web de E-Commerce Responsive
 
-Este proyecto es una página web con diseño moderno y oscuro, donde se muestra una sección principal de productos organizados en **cards responsivas** usando Flexbox. Además, incluye un header con navegación, formulario de contacto, sección de reseñas y un footer.
-
----
-
-## Tecnologías usadas
-
-- **HTML5**: Estructura semántica de la página.
-- **CSS3**: Estilos modernos con enfoque en diseño oscuro, responsive y efectos visuales.
-- **Flexbox**: Para organizar la sección de productos en un layout flexible y adaptable.
-- **Media Queries**: Para que el diseño funcione bien en dispositivos móviles y escritorio.
-- **Git & GitHub**: Control de versiones y hosting del código.
+Este proyecto es una **tienda online de ropa moderna** que muestra productos en tarjetas responsivas usando Flexbox y Bootstrap. Incluye navegación sticky, carrito de compras dinámico, formulario funcional con Formspree, sección de reseñas y diseño completamente adaptable a dispositivos móviles.
 
 ---
 
-## Estructura del proyecto
+## 🚀 Tecnologías usadas
 
-- `index.html` — archivo principal con la estructura de la página.
-- `styles.css` — hoja de estilos con:
-  - Reset y base general.
-  - Estilos para header y navegación (desktop y móvil).
-  - Sección productos con cards flexibles y efectos hover.
-  - Formulario con estilos modernos.
-  - Sección reseñas y footer.
-  - Responsive con media queries para dispositivos pequeños.
-
----
-
-## Características principales
-
-- **Diseño oscuro** moderno y elegante, ideal para focos nocturnos.
-- **Cards de productos** con sombras, transiciones suaves y texto truncado para títulos largos.
-- **Navegación sticky** que queda fija al hacer scroll.
-- **Menú móvil deslizable** para una experiencia amigable en smartphones.
-- **Formulario funcional** con campos accesibles y estilos en foco.
-- **Responsividad garantizada** para cualquier tamaño de pantalla.
+- **HTML5**: Estructura semántica completa (header, nav, main, section, footer).
+- **CSS3**: Modularizado por secciones, con estilos oscuros, transiciones y responsividad.
+- **Bootstrap 5**: Estilos rápidos, botones, sistema de columnas.
+- **Flexbox y Grid**: Organización visual de productos y reseñas.
+- **JavaScript**: Modularizado en archivos independientes para funcionalidades específicas.
+- **Fetch API**: Consumo de productos desde una API REST.
+- **localStorage**: Persistencia del carrito de compras.
+- **Formspree**: Manejo del formulario de contacto sin backend.
+- **Media Queries**: Diseño responsive real.
+- **Git & GitHub**: Control de versiones y hosting.
 
 ---
 
-## Despliegue / Hosting
+## ✨ Características principales
 
-El sitio está alojado gratuitamente usando **GitHub Pages** y se puede visitar en la siguiente URL:
+### 🛍️ Productos dinámicos
+- Cargados desde `https://fakestoreapi.com/products?limit=8`
+- Cards visuales con fondo blanco, imagen centrada, título truncado a dos líneas
+- Botón "Agregar al carrito" funcional
 
-[https://lautaroezm.github.io/KarosStore/](https://lautaroezm.github.io/KarosStore/)
+### 🧺 Carrito de compras
+- Botón flotante visible en toda la web
+- Menú lateral derecho animado (responsive)
+- Se actualiza en tiempo real y guarda el estado con `localStorage`
+- Opciones: eliminar productos, vaciar carrito, simular compra
+
+### 📱 Responsive total
+- Layout fluido en todos los dispositivos
+- Menú hamburguesa para móvil
+- Carrito adaptado a pantallas pequeñas
+- Diseño visualmente consistente con media queries
+
+### 📨 Formulario de contacto
+- Funcional a través de **Formspree**
+- Campos requeridos con validación visual
+- Envío seguro y sin backend propio
+
+### ⭐ Reseñas
+- Sección visual con estilo Grid
+- Contenido actualmente estático (puede mejorarse con conexión real)
+
+### ♿ Accesibilidad y SEO
+- Etiquetas ARIA, roles, `tabindex` y atributos `alt` en imágenes
+- `meta tags` en `<head>` para mejorar búsqueda y visibilidad
+
+---
+
+## 🌐 Hosting del proyecto
+
+El sitio está desplegado con GitHub Pages y accesible aquí:
+
+🔗 [https://lautaroezm.github.io/KarosStore/](https://lautaroezm.github.io/KarosStore/)
+
+---
+
+## 🧪 Cómo correrlo localmente
+
+1. Cloná o descargá el repositorio.
+2. Abrilo en Visual Studio Code.
+3. Instalá y usá la extensión **Live Server** para evitar errores de CORS.
+4. Hacé clic derecho en `index.html` y elegí **"Open with Live Server"**.
+
+> ⚠️ Si abrís el HTML directamente con doble clic (file://), no funcionarán los scripts debido a restricciones de seguridad del navegador.
+
+---
+
+## 🧑‍💻 Autor
+
+**Lautaro**  
+Desarrollador web junior | Apasionado por la política, el diseño y el código.  
+📍 Argentina
+
+---
+
+## 📄 Licencia
+
+Proyecto realizado con fines educativos.  
+Podés usarlo para aprender, modificarlo y adaptarlo libremente.
